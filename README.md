@@ -21,4 +21,4 @@ Incluye un layout interactivo con componentes creados en React, que simulan func
 
 El proyecto utiliza HTML5, CSS3 y React para lograr un diseño moderno, profesional y adaptable a distintos dispositivos.
 
-Link: [Visita el proyecto en Netlify](https://lambent-vacherin-118e91.netlify.app/)
+Link: [Visita el proyecto en Netlify](https://lovely-pastelito-690a9a.netlify.app/)
