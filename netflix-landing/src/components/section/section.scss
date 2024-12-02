@@ -1,0 +1,25 @@
+@use "../../styles/mixins";
+
+.section {
+  background-color: var(--color--black);
+  box-sizing: border-box;
+  padding: 80px 20px;
+
+  + .section {
+    background-color: var(--color--grey);
+  }
+}
+
+.section__title {
+  color: var(--color--white);
+  font-family: var(--font--secondary);
+  @include mixins.toRem(font-size, 30);
+  font-weight: var(--font-weight-500);
+  @include mixins.toRem(margin-bottom, 30);
+}
+
+@media (min-width: 1200px) {
+  .section {
+    @include mixins.toRem(padding, 80);
+  }
+}

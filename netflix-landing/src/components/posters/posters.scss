@@ -1,0 +1,86 @@
+@use "../../styles/mixins";
+
+.posters {
+  display: grid;
+  gap: 80px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.poster {
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.poster__image {
+  border-radius: var(--border-radius);
+  height: 100%;
+  @include mixins.toRem(margin-bottom, 15);
+  object-fit: cover;
+  transition: opacity ease-in-out 0.5s;
+  width: 100%;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.poster__name {
+  color: var(--color--white);
+  font-family: var(--font--secondary);
+  @include mixins.toRem(font-size, 19);
+  position: relative;
+}
+
+@media (min-width: 600px) {
+  .posters {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .posters {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1400px) {
+  .posters {
+    grid-template-rows: repeat(1, 1fr);
+    gap: 50px;
+  }
+
+  .poster__name {
+    position: absolute;
+  }
+
+  .poster--one {
+    grid-area: 1 / 1 / 3 / 3;
+
+    .poster__name {
+      bottom: 10%;
+      @include mixins.toRem(font-size, 50);
+      left: 3%;
+    }
+  }
+
+  .poster--two {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+
+  .poster--three {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+
+  .poster--two,
+  .poster--three {
+    .poster__name {
+      bottom: 10%;
+      @include mixins.toRem(font-size, 25);
+      left: 6%;
+    }
+  }
+}

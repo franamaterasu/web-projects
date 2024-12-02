@@ -1,0 +1,23 @@
+@use "../../styles/mixins";
+
+.header {
+  background-color: var(--color--black);
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+  &__logo {
+    color: var(--color--white);
+    font-family: var(--font--primary);
+    @include mixins.toRem(font-size, 35);
+    font-weight: var(--font-weight-300);
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    padding: 10px 80px;
+  }
+}

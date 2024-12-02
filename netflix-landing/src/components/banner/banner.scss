@@ -1,0 +1,59 @@
+@use "../../styles/mixins";
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background: url("https://media.revistagq.com/photos/5ca5f04a4c7adbcff100d172/16:9/w_1280,c_limit/la_maldicion_de_hill_house_8675.jpg")
+    center/cover fixed;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.caption__title,
+.caption__description {
+  color: var(--color--white);
+}
+
+.caption__title {
+  font-family: var(--font--secondary);
+  @include mixins.toRem(font-size, 100);
+  font-weight: var(--font-weight-500);
+  @include mixins.toRem(margin-bottom, 15);
+}
+
+.caption__description {
+  font-family: var(--font--primary);
+  @include mixins.toRem(font-size, 25);
+  font-weight: var(--font-weight-300);
+  @include mixins.toRem(line-height, 30);
+  @include mixins.toRem(margin-bottom, 25);
+}
+
+.caption__button {
+  background-color: var(--color--red);
+  border-radius: var(--border-radius);
+  border: none;
+  color: var(--color--white);
+  font-family: var(--font--secondary);
+  @include mixins.toRem(font-size, 17);
+  outline: 0;
+  padding: 15px 25px;
+  transition: all ease-in-out 0.5s;
+
+  &:hover {
+    background-color: var(--color--red-two);
+    cursor: pointer;
+  }
+
+  + .caption__button {
+    @include mixins.toRem(margin-left, 15);
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner {
+    padding: 0 80px;
+  }
+}

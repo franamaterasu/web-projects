@@ -1,0 +1,55 @@
+@use "../../styles/mixins";
+
+.card__picture {
+  border-radius: var(--border-radius);
+  @include mixins.toRem(margin-bottom, 15);
+  overflow: hidden;
+  position: relative;
+
+  &:hover {
+    .card__image {
+      transform: scale(1.5);
+    }
+
+    .card__icon {
+      opacity: 1;
+    }
+  }
+}
+
+.card__image {
+  border-radius: var(--border-radius);
+  height: auto;
+  transition: transform ease-in-out 0.5s;
+  width: 100%;
+}
+
+.card__icon {
+  color: var(--color--white);
+  @include mixins.toRem(font-size, 60);
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity ease-in-out 0.5s;
+  width: 100%;
+}
+
+.card__title,
+.card__description {
+  color: var(--color--white);
+}
+
+.card__title {
+  font-family: var(--font--secondary);
+  @include mixins.toRem(font-size, 19);
+  @include mixins.toRem(margin-bottom, 15);
+}
+
+.card__description {
+  font-family: var(--font--primary);
+  @include mixins.toRem(font-size, 17);
+  font-weight: var(--font-weight-300);
+  line-height: 25px;
+}

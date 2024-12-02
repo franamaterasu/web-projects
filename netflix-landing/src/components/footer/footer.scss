@@ -1,0 +1,52 @@
+@use "../../styles/mixins";
+
+.footer {
+  background-color: var(--color--black);
+  box-sizing: border-box;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 80px 20px;
+}
+
+.footer__title,
+.footer__link {
+  color: var(--color--white);
+}
+
+.footer__title {
+  font-family: var(--font--secondary);
+  @include mixins.toRem(font-size, 21);
+  @include mixins.toRem(margin-bottom, 30);
+}
+
+.footer__column .footer__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.footer__item {
+  @include mixins.toRem(margin-bottom, 20);
+}
+
+.footer__link {
+  font-family: var(--font--primary);
+  font-weight: var(--font-weight-300);
+  text-decoration: none;
+  transition: color ease-in-out 0.5s;
+
+  &:hover {
+    color: var(--color--red);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    @include mixins.toRem(padding, 80);
+  }
+}

@@ -1,0 +1,14 @@
+@use "mixins";
+
+:root {
+  --font--primary: "Lato", sans-serif;
+  --font--secondary: "Roboto", sans-serif;
+  --color--black: #0f0f0f;
+  --color--grey: #0d0404;
+  --color--white: #f0f0f0;
+  --color--red: #e50914;
+  --color--red-two: #ce050f;
+  --border-radius: 10px;
+  --font-weight-300: 300
+  --font-weight-500: 500
+}
