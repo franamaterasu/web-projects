@@ -9,3 +9,5 @@ A continuación se presenta una lista de los ejercicios incluidos en el proyecto
 ### Ejercicio 1: **Landing Page de Serie: Estilo Netflix**
 
 Landing page inspirada en el diseño de Netflix, diseñada para promocionar una serie. Incluye secciones interactivas con los capítulos de la serie y recomendaciones de series similares, todo con un diseño responsivo y moderno utilizando HTML5 y CSS3.
+
+Link: [Visita el proyecto en Netlify](https://lambent-vacherin-118e91.netlify.app/)
