@@ -11,3 +11,14 @@ A continuación se presenta una lista de los ejercicios incluidos en el proyecto
 Landing page inspirada en el diseño de Netflix, diseñada para promocionar una serie. Incluye secciones interactivas con los capítulos de la serie y recomendaciones de series similares, todo con un diseño responsivo y moderno utilizando HTML5 y CSS3.
 
 Link: [Visita el proyecto en Netlify](https://lambent-vacherin-118e91.netlify.app/)
+
+
+### Ejercicio 2: **App de Llamadas Empresariales**
+
+Diseño de una interfaz responsiva inspirada en una app de llamadas empresariales.
+
+Incluye un layout interactivo con componentes creados en React, que simulan funcionalidades como videollamadas, lista de participantes, controles básicos de llamada y un chat.
+
+El proyecto utiliza HTML5, CSS3 y React para lograr un diseño moderno, profesional y adaptable a distintos dispositivos.
+
+Link: [Visita el proyecto en Netlify](https://lambent-vacherin-118e91.netlify.app/)
