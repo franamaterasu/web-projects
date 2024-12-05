@@ -1,0 +1,117 @@
+@use "../../styles/mixins" as *;
+
+.locations {
+  padding: 60px 20px;
+  background-color: var(--background-color-light);
+}
+
+.locations app-banner {
+  height: 200px;
+  display: block;
+  margin-bottom: 40px;
+  border-radius: 10px;
+
+  &:first-of-type {
+    background: url("https://i.pinimg.com/originals/66/9c/a9/669ca9e3166178144cb948e1305b81eb.png")
+      center/cover no-repeat;
+  }
+
+  &:nth-child(2) {
+    background: url("https://img.freepik.com/free-photo/surreal-planet-illustration_23-2151877946.jpg")
+      center/cover no-repeat;
+  }
+
+  &:nth-child(3) {
+    background: url("https://preview.redd.it/skodeu3osgvx.jpg?width=1080&crop=smart&auto=webp&s=1e7f7df595a42872856f2dc0c81bec10580f0dfc")
+      center/cover no-repeat;
+  }
+
+  &:nth-child(4) {
+    background: url("https://images3.alphacoders.com/633/thumb-1920-633257.jpg")
+      center/cover no-repeat;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+    background: url("https://blogger.googleusercontent.com/img/a/AVvXsEj6D6oYhyaSITToM500yJOo6xBRn766x_BM3zsBHgVsKlx_SL_tX2o3wzau6hPlm116w_-oztY4xQGa8oTZJAV8JZAho_Tz0_dcpkSKTF-XuasBhB7L6xPkGT871NEVC2jDuGSsK4rs_Tg6g3VOjGOJrHByPZ58kmSqePBawgTa1YFjR_kMiyFTwRmP=s1600-rw")
+      center/cover no-repeat;
+  }
+}
+
+@include breakpoint(medium) {
+  .locations {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .locations app-banner {
+    margin: 0;
+
+    &:first-of-type {
+      grid-column: 1 / span 3;
+    }
+
+    &:nth-child(2) {
+      grid-row: 2 / span 1;
+    }
+
+    &:nth-child(3) {
+      grid-row: 2 / span 1;
+      grid-column: 2 / span 2;
+    }
+
+    &:nth-child(4) {
+      grid-column: 1 / span 1;
+      grid-row: 3 / span 1;
+    }
+
+    &:last-of-type {
+      grid-column: 2 / span 2;
+    }
+  }
+}
+
+@include breakpoint(large) {
+  .locations {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .locations app-banner {
+    margin: 0;
+    height: auto;
+
+    &:hover {
+      .locations__title {
+        opacity: 1;
+      }
+    }
+
+    &:first-of-type {
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 2;
+      height: 600px;
+    }
+
+    &:nth-child(2) {
+      grid-column: 3 / span 1;
+      grid-row: 1 / span 1;
+    }
+
+    &:nth-child(3) {
+      grid-column: 4 / span 1;
+      grid-row: 1 / span 1;
+    }
+
+    &:nth-child(4) {
+      grid-column: 3 / span 1;
+      grid-row: 2 / span 1;
+    }
+
+    &:last-of-type {
+      grid-column: 4 / span 1;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+<section class="locations">
+  <app-banner
+    *ngFor="let location of locations | slice : 0 : 5"
+    [location]="location"
+  />
+</section>

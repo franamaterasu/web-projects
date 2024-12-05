@@ -12,7 +12,6 @@ Landing page inspirada en el diseño de Netflix, diseñada para promocionar una 
 
 Link: [Visita el proyecto en Netlify](https://lambent-vacherin-118e91.netlify.app/)
 
-
 ### Ejercicio 2: **App de Llamadas Empresariales**
 
 Diseño de una interfaz responsiva inspirada en una app de llamadas empresariales.
@@ -22,3 +21,11 @@ Incluye un layout interactivo con componentes creados en React, que simulan func
 El proyecto utiliza HTML5, CSS3 y React para lograr un diseño moderno, profesional y adaptable a distintos dispositivos.
 
 Link: [Visita el proyecto en Netlify](https://lovely-pastelito-690a9a.netlify.app/)
+
+### Ejercicio 3: **Rick & Morty App**
+
+App interactiva que permite explorar personajes y localizaciones del universo de Rick y Morty. Los usuarios pueden ver detalles como nombre, estatus, especie y género de los personajes.
+
+El proyecto está diseñado con HTML5, CSS3 y Angular para ofrecer una experiencia responsiva y fluida en distintos dispositivos.
+
+Link: [Visita el proyecto en Netlify](https://zingy-frangipane-eb32f4.netlify.app/)

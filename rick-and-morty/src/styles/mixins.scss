@@ -1,0 +1,32 @@
+$small-breakpoint: 600px;
+$medium-breakpoint: 900px;
+$large-breakpoint: 1200px;
+$xlarge-breakpoint: 1400px;
+
+@mixin breakpoint($size) {
+  @if $size == small {
+    @media (min-width: $small-breakpoint) {
+      @content;
+    }
+  } @else if $size == medium {
+    @media (min-width: $medium-breakpoint) {
+      @content;
+    }
+  } @else if $size == large {
+    @media (min-width: $large-breakpoint) {
+      @content;
+    }
+  } @else if $size == xlarge {
+    @media (min-width: $xlarge-breakpoint) {
+      @content;
+    }
+  }
+}
+
+@mixin box-shadow($shadow: 0 2px 10px rgba(0, 0, 0, 0.1)) {
+  box-shadow: $shadow;
+}
+
+@mixin padding($top: 20px, $right: 20px, $bottom: 20px, $left: 20px) {
+  padding: $top $right $bottom $left;
+}

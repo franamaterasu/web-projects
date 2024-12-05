@@ -1,0 +1,24 @@
+<article class="card">
+  <img [src]="character.image" alt="{{ character.name }}" class="card__image" />
+  <header class="card__header">
+    <div>
+      <h3 class="card__name">{{ character.name }}</h3>
+      <p class="card__status">{{ character.species }}</p>
+    </div>
+    <ng-icon class="card__info-icon" name="heroInformationCircle" />
+  </header>
+  <section class="card__features">
+    <article class="card__feature">
+      <ng-icon class="card__feature-icon" name="heroSignal" />
+      <p class="card__feature-text">{{ character.status }}</p>
+    </article>
+    <article class="card__feature">
+      <ng-icon class="card__feature-icon" name="heroUser" />
+      <p class="card__feature-text">{{ character.gender }}</p>
+    </article>
+    <article class="card__feature">
+      <ng-icon class="card__feature-icon" name="heroSparkles" />
+      <p class="card__feature-text">{{ character.species }}</p>
+    </article>
+  </section>
+</article>
