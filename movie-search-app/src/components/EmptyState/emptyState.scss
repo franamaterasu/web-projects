@@ -1,0 +1,15 @@
+.empty-state {
+  text-align: center;
+  margin: 100px 0;
+
+  &__title {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 33px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-family: "Roboto", sans-serif;
+  }
+}

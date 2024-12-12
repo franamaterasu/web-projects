@@ -1,0 +1,12 @@
+.card {
+  &__image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    font-family: "Lora", serif;
+    font-size: 21px;
+  }
+}

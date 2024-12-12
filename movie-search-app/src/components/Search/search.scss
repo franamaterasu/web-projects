@@ -1,0 +1,31 @@
+.search {
+  background-color: #e0dede;
+  display: flex;
+  padding: 20px 0;
+  justify-content: center;
+  gap: 10px;
+
+  &__input {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 200px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  &__button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: #0f0f0f;
+      color: #f0f0f0;
+      cursor: pointer;
+    }
+  }
+}

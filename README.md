@@ -29,3 +29,11 @@ App interactiva que permite explorar personajes y localizaciones del universo de
 El proyecto está diseñado con HTML5, CSS3 y Angular para ofrecer una experiencia responsiva y fluida en distintos dispositivos.
 
 Link: [Visita el proyecto en Netlify](https://zingy-frangipane-eb32f4.netlify.app/)
+
+### Ejercicio 4: **Busqueda de películas**
+
+App que permite explorar y visualizar una variedad de recetas de postres, enfocándose en detalles como ingredientes, instrucciones de preparación y tiempo estimado de cocción. Los usuarios pueden navegar fácilmente entre las diferentes recetas y acceder a información detallada de cada una.
+
+El proyecto está diseñado con HTML5, CSS3 y React para ofrecer una experiencia responsiva y fluida en distintos dispositivos.
+
+Link: [Visita el proyecto en Netlify](https://wondrous-rugelach-42e6c1.netlify.app/)
